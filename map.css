@@ -1,0 +1,162 @@
+body {
+    background-color: #242424;
+}
+
+.header {
+    display: flex;
+    flex-flow: row;
+}
+
+.logo {
+    border-radius: 25%;
+}
+
+h1 {
+    font-family: "Gerhaus";
+    color: #f3f3f3;
+    padding-left: 20px;
+}
+
+h2 {
+    font-family: "Garet";
+    color: #f3f3f3;
+    padding-left: 20px;
+}
+
+.main_menu {
+    display: flex;
+    flex-flow: column;
+    width: 350px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    color: #f3f3f3;
+    border-radius: 20px;
+    font-family: "Gerhaus";
+    width: 290px;
+    height: 60px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 80%;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.menu_ico {
+    padding-left: 20px;
+}
+
+.menu_txt {
+    padding-left: 30px;
+    font-family: "Garet";
+}
+
+#mmp {
+    background-color: #535353;
+    opacity: 100%;
+}
+
+.menu:hover {
+    transition: 0.5s;
+    background-color: #535353;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Gerhaus";  
+    src: url("fonts/Gerhaus.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Garet";
+    src: url("fonts/Garet.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.map img {
+    margin-left: 500px;
+}
+
+.map {
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 680px;
+}
+
+.citi {
+    fill: none;
+    stroke: #951bce;
+    opacity: 50%;
+    stroke-width: 3px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.citi:hover {
+    animation: Citi 3s linear infinite;
+    opacity: 100%;
+}
+
+@keyframes Citi {
+    0% {
+        stroke: #951bce;
+    }
+    50% {
+        stroke: #1f1f1f;
+    }
+    100% {
+        stroke: #2c52b8;
+    }
+}
+
+.citi_txt {
+    position: absolute;
+    cursor: default;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#spwn {
+    top: 50px;
+    left: 550px;
+}
+
+#ari {
+    top: 80px;
+    left: 760px;
+}
+
+#svo {
+    top: 320px;
+    left: 850px;
+}
+
+#sturm {
+    top: 650px;
+    left: 880px;
+    color: #000000;
+}
+
+#citi_info {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: absolute;
+}

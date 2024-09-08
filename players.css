@@ -1,0 +1,133 @@
+body {
+    background-color: #242424;
+}
+
+.header {
+    display: flex;
+    flex-flow: row;
+}
+
+.logo {
+    border-radius: 25%;
+}
+
+h1 {
+    font-family: "Gerhaus";
+    color: #f3f3f3;
+    padding-left: 20px;
+}
+
+h2 {
+    font-family: "Garet";
+    color: #f3f3f3;
+    padding-left: 20px;
+}
+
+.player_avatar {
+    border-radius: 10%;
+}
+
+.main_menu {
+    display: flex;
+    flex-flow: column;
+    width: 350px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    color: #f3f3f3;
+    border-radius: 20px;
+    font-family: "Gerhaus";
+    width: 290px;
+    height: 60px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 80%;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.menu_ico {
+    padding-left: 20px;
+}
+
+.menu_txt {
+    padding-left: 30px;
+    font-family: "Garet";
+}
+
+#mpl {
+    background-color: #535353;
+    opacity: 100%;
+}
+
+.menu:hover {
+    transition: 0.5s;
+    background-color: #535353;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.players {
+    display: flex;
+    flex-flow: wrap row;
+    position: absolute;
+    height: 700px;
+    width: 1500px;
+    overflow-y: auto;
+    margin-top: 50px;
+
+}
+
+#player {
+    display: flex;
+    padding-top: 70px;
+    margin-left: 450px;
+}
+
+#search {
+    width: 900px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 450px;
+    position: absolute;
+    background-color: #131313;
+    color: #f3f3f3;
+    padding-left: 20px;
+}
+
+.players::-webkit-scrollbar {
+    width: 10px; /* Ширина всего элемента навигации */
+}
+  
+.players::-webkit-scrollbar-track {
+    background: #5c5c5c; /* Цвет дорожки */
+    border-radius: 20px;
+}
+  
+.players::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b; /* Цвет бегунка */
+    border-radius: 20px; /* Округление бегунка */
+}
+
+
+@font-face {
+    font-family: "Gerhaus";  
+    src: url("fonts/Gerhaus.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Garet";
+    src: url("fonts/Garet.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+a {
+    text-decoration: none;
+}
